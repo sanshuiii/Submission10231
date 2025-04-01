@@ -4,7 +4,14 @@
 
 ![taichi.gif](./taichi.gif)
 
-> Table 1: Mean and standard deviation of our model on FaceForensics.
+> Table 1: Mean and standard deviation of FVD16 for RealEstate for 5 runs.
+
+| Method     | Mean     | Std     |
+| ---------- | -------- | ------- |
+| CoVoGAN    | 193.2060 | 5.3229  |
+| StyleGAN-V | 212.0681 | 24.8039 |
+| MoStGAN-V  | 254.0751 | 30.0630 |
+
 
 > Table 2: Disentanglement Metrics on FaceForensics.
 
@@ -13,7 +20,7 @@
 | MCC / %  $\uparrow$        | **33.78** | **8.22**         | **29.00** | **27.95** |
 | SAP / %  $\uparrow$        | 8.48      | 0.55             | 4.25      | 5.90      |
 | Modularity / %  $\uparrow$ | 17.37     | 10.24            | 7.66      | 13.48     |
-> Table 3:  $\text{FVD}_{8}\downarrow$ and $\text{FVD}_{16}\downarrow$ scores across the FaceForensics, SkyTimelapse, and RealEstate datasets. The results for Latte on the RealEstate dataset are omitted as the checkpoints were not released.
+> Table 3:  $\text{FVD}_{8}$ and $\text{FVD}_{16}$ scores across the FaceForensics, SkyTimelapse, and RealEstate datasets. The results for Latte on the RealEstate dataset are omitted as the checkpoints were not released.
 
 | **Method**         | **FaceForensics $\text{256}^2$** | **FaceForensics $\text{256}^2$** | **SkyTimelapse $\text{256}^2$** | **SkyTimelapse $\text{256}^2$** | **RealEstate $\text{256}^2$** | **RealEstate $\text{256}^2$** |
 | ------------------ | :------------------------------: | :------------------------------: | :-----------------------------: | :-----------------------------: | :---------------------------: | :---------------------------: |
@@ -27,10 +34,17 @@
 | **Latte**          |              45.49               |              49.02               |              40.21              |            **41.84**            |               -               |               -               |
 | **CoVoGAN (ours)** |            **43.75**             |            **48.80**             |            **35.58**            |              46.51              |          **154.88**           |          **174.87**           |
 
-> Table 4: Video generation performance with different dimensions of $N_s$.
+> Table 4: Video generation performance with different dimensions of $N_s$ by $\text{FVD}_{16}$ of FaceForensics. As shown in the table, by $N_s$ increase, the $FVD$ score decrease slowly, which indicates that $N_s=4$ is a good selection for the FaceForensics dataset.
 
- > Figure 2: Correlation matric between $z_s$ and extracted features from generated videos.
- 
+| Ns  | $\text{FVD}_{16}$ |
+| --- | ----------------- |
+| 4   | 48.80             |
+| 8   | 47.85             |
+
+
+ > Figure 2: Correlation matric between $z_s$ and extracted features from generated videos for FaceForensics by CoVoGAN.
+![cor.png](cor.png)
+
  > Figure 3: Example of long and short video for.
  
  ![longshort.jpg](./longshort.jpg)
