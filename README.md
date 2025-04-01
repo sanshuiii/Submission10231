@@ -20,7 +20,8 @@
 | MCC / %  $\uparrow$        | **33.78** | **8.22**         | **29.00** | **27.95** |
 | SAP / %  $\uparrow$        | 8.48      | 0.55             | 4.25      | 5.90      |
 | Modularity / %  $\uparrow$ | 17.37     | 10.24            | 7.66      | 13.48     |
-> Table 3:  $\text{FVD}_{8}$ and $\text{FVD}_{16}$ scores across the FaceForensics, SkyTimelapse, and RealEstate datasets. The results for Latte on the RealEstate dataset are omitted as the checkpoints were not released.
+
+> Table 3:  $FVD_{8}$ and $FVD_{16}$ scores across the FaceForensics, SkyTimelapse, and RealEstate datasets. The results for Latte on the RealEstate dataset are omitted as the checkpoints were not released.
 
 | **Method**         | **FaceForensics $\text{256}^2$** | **FaceForensics $\text{256}^2$** | **SkyTimelapse $\text{256}^2$** | **SkyTimelapse $\text{256}^2$** | **RealEstate $\text{256}^2$** | **RealEstate $\text{256}^2$** |
 | ------------------ | :------------------------------: | :------------------------------: | :-----------------------------: | :-----------------------------: | :---------------------------: | :---------------------------: |
@@ -34,7 +35,7 @@
 | **Latte**          |              45.49               |              49.02               |              40.21              |            **41.84**            |               -               |               -               |
 | **CoVoGAN (ours)** |            **43.75**             |            **48.80**             |            **35.58**            |              46.51              |          **154.88**           |          **174.87**           |
 
-> Table 4: Video generation performance with different dimensions of $N_s$ by $\text{FVD}_{16}$ of FaceForensics. As shown in the table, by $N_s$ increase, the $FVD$ score decrease slowly, which indicates that $N_s=4$ is a good selection for the FaceForensics dataset.
+> Table 4: Video generation performance with different dimensions of $N_s$ by $FVD_{16}$ of FaceForensics. As shown in the table, by $N_s$ increase, the $FVD$ score decrease slowly, which indicates that $N_s=4$ is a good selection for the FaceForensics dataset.
 
 | Ns  | $\text{FVD}_{16}$ |
 | --- | ----------------- |
@@ -43,6 +44,7 @@
 
 
  > Figure 2: Correlation matric between $z_s$ and extracted features from generated videos for FaceForensics by CoVoGAN.
+ 
 ![cor.png](cor.png)
 
  > Figure 3: Example of long and short video for.
