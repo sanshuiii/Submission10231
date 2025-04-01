@@ -2,7 +2,7 @@
 
 > Figure 1: Controllability visualization results on the TaiChi dataset. To accelerate training, we downsample the resolution to $64^2$. The three columns correspond to different identities. The first two columns show control over the dimension of $z_s$, which corresponds to "turning" and "stretching arms," respectively. The last column shows the simultaneous control of both dimensions.
 
-![taichi.gif]
+![taichi.gif](./taichi.gif)
 
 > Table 1: Mean and standard deviation of our model on FaceForensics.
 
@@ -33,4 +33,4 @@
  
  > Figure 3: Example of long and short video for.
  
- ![longshort.jpg]
+ ![longshort.jpg](./longshort.jpg)
